@@ -45,7 +45,7 @@ transformer-scratch/
 
 - [x] Project structure setup
 - [x] Scaled dot-product attention implementation
-- [ ] Multi-head attention implementation
+- [x] Multi-head attention implementation
 - [ ] Transformer layers
 - [ ] Complete GPT model
 
