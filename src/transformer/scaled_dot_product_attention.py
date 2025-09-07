@@ -54,7 +54,7 @@ class ScaledDotProductAttention(nn.Module):
         self.d_out = d_out
         self.W_query = nn.Linear(d_in, d_out, bias=qkv_bias)  # Initializing linear layer of query weights - trainable
         self.W_key = nn.Linear(d_in, d_out, bias=qkv_bias) # Initializing linear layer of key weights - trainable
-        self.W_value = nn.Linear(d_in, d_out, bias=qkv_bias) # Initializing linear layer of value weights - trainiable
+        self.W_value = nn.Linear(d_in, d_out, bias=qkv_bias) # Initializing linear layer of value weights - trainable
         self.dropout = nn.Dropout(dropout_rate) # Adding a dropout layer to avoid overfitting
         self.register_buffer(
             'mask',
