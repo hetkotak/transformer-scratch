@@ -96,7 +96,7 @@ class ScaledDotProductAttention(nn.Module):
         attention_scores.masked_fill_(self.mask.bool()[:num_tokens, :num_tokens], -torch.inf)
         
         # Step 4: Scale by sqrt(d_k) and apply softmax for normalization
-        attention_weights = torch.softmax(attention_scores / keys.shape[-1] ** 0.5, dim=-1)
+        attention_weights = torch.softmax(attention_scores / self.d_out ** 0.5, dim=-1)
         
         # Step 5: Apply dropout to attention weights for regularization
         attention_weights = self.dropout(attention_weights)
