@@ -7,7 +7,7 @@ name = "transformer-scratch"
 version = "0.1.0"
 description = "Transformer models built from scratch in PyTorch for educational purposes"
 authors = [
-    {name = "Your Name", email = "your.email@example.com"}
+    {name = "Het Kotak", email = "me@hetkotak.com"}
 ]
 readme = "README.md"
 license = {text = "MIT"}
