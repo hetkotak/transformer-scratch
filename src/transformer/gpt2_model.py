@@ -15,8 +15,8 @@ Key architectural components:
 
 import torch
 import torch.nn as nn
-from transformer import TransformerBlock
-from layer_norm import LayerNorm
+from .transformer import TransformerBlock
+from .layer_norm import LayerNorm
 
 class GPTModel(nn.Module):
     """
